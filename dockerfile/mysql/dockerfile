@@ -1,0 +1,13 @@
+# dockerfile
+FROM mysql:5.7
+
+RUN echo '' >> /etc/mysql/my.cnf
+RUN echo '[mysqld]' >> /etc/mysql/my.cnf
+RUN echo 'character-set-server=utf8' >> /etc/mysql/my.cnf
+RUN echo '' >> /etc/mysql/my.cnf
+RUN echo '[client]' >> /etc/mysql/my.cnf
+RUN echo 'default-character-set=utf8' >> /etc/mysql/my.cnf
+
+
+
+

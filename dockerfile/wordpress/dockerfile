@@ -1,0 +1,24 @@
+# dockerfile
+FROM wordpress
+
+ENV SITE_DOMAIN ""
+ENV CERTBOT_EMAIL ""
+ENV SITE_TITLE ""
+ENV ADMIN_USER ""
+ENV ADMIN_PASSWORD ""
+ENV ADMIN_EMAIL ""
+
+RUN echo 'update & install start'; \
+  apt-get update && \
+  apt-get upgrade -y && \
+  apt-get install python-certbot-apache -y && \
+  apt-get install git -y
+
+RUN echo 'wp-cli'; \
+  curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar; \
+  chmod +x wp-cli.phar; \
+  mv wp-cli.phar /usr/local/bin/wp;
+
+COPY setup_wordpress.sh /home/wordpress-auto/
+COPY post_wordpress.sh /home/wordpress-auto/
+COPY setup_category.sh /home/wordpress-auto/

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* Make it easier to see when viewing source code */
+pre {
+    background-color: #364549;
+    color: #e3e3e3;
+}
+
+/* Specify font size */
+a, p {
+    font-size: 18px;
+}
+
+header {
+    background-color: white;
+}
+
+.navbar {
+    /* height: 100px; */
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+}
+
+.blog-title {
+    font-size: 30px;
+}
+
+.post-list-title, .post-list-title:link, .post-list-title:visited, .post-list-title:hover, .post-list-title:active {
+    color: #424242;
+    font-size: 20px;
+}
+
+.post-list-date {
+    color: #999999;
+    font-size: 14px;
+}
+
+.post-date {
+    color: #999999;
+    font-size: 14px;
+}
+
+.post-category {
+    color: #999999;
+    font-size: 14px;
+}
+
+.footer-text, footer-text:link, .footer-text:visited, .footer-text:hover, .footer-text:active {
+    color: #999999;
+    font-size: 14px;
+}
+
+.post-title {
+    font-size: 34px; 
+}
+
+#post-content {
+    background-color: white;
+}
+
+#post-related {
+    background-color: white;
+}
+
+#post-list {
+    background-color: white;
+}
+
+.page-numbers {
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+}
